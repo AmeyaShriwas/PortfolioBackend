@@ -80,7 +80,7 @@ const editProject = async (projectId, updates) => {
 
 const deleteProject = async (projectId) => {
     await Project.findByIdAndDelete(projectId);
-    return { message: 'Project deleted successfully' };
+    return { message: 'Project deleted successfully'};
 };
 
 const addImagesToProject = async (projectId, images) => {
